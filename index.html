@@ -1,0 +1,485 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Soule Line — George Soule, Mayflower 1620 → Andrew Bullard, 2026</title>
+<meta name="description" content="A documented family lineage from Mayflower passenger George Soule to the Soles family of Columbus County, North Carolina.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&family=IM+Fell+English+SC&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#1c2740;
+    --ink-soft:#3a4560;
+    --parchment:#e9e0c8;
+    --parchment-deep:#ddd0aa;
+    --card:#faf6ea;
+    --card-line:#d8cba3;
+    --seal:#7c1f2b;
+    --seal-dark:#5c141d;
+    --brass:#a9822c;
+    --brass-light:#c9a04a;
+    --confirmed:#3f6b3f;
+    --supported:#a9822c;
+    --probable:#8a5a2b;
+    --secondary:#6b6152;
+    --living:#2e5a8e;
+    --max-w:960px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--parchment);
+    background-image:
+      radial-gradient(ellipse at top left, rgba(255,255,255,0.35), transparent 55%),
+      radial-gradient(ellipse at bottom right, rgba(0,0,0,0.05), transparent 55%);
+    color:var(--ink);
+    font-family:'Source Serif 4', Georgia, serif;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,.display{font-family:'Cormorant Garamond', Georgia, serif;}
+  a{color:var(--seal);}
+  .wrap{max-width:var(--max-w);margin:0 auto;padding:0 24px;}
+
+  .hero{padding:96px 24px 72px;text-align:center;border-bottom:1px solid var(--card-line);position:relative;}
+  .anchor{font-size:34px;color:var(--brass);letter-spacing:0.3em;display:block;margin-bottom:18px;}
+  .hero .eyebrow{font-family:'IM Fell English SC', serif;letter-spacing:0.18em;text-transform:uppercase;font-size:13px;color:var(--ink-soft);margin:0 0 10px;}
+  .hero h1{font-size:clamp(40px,7vw,72px);font-weight:600;margin:0 0 14px;line-height:1.05;}
+  .hero h1 em{font-style:italic;color:var(--seal);}
+  .hero .subtitle{font-size:clamp(16px,2.4vw,20px);color:var(--ink-soft);max-width:640px;margin:0 auto;}
+  .hero .years{margin-top:28px;font-family:'IM Fell English SC', serif;font-size:15px;letter-spacing:0.14em;color:var(--brass);}
+  .hero .years span{margin:0 14px;}
+
+  .royal{max-width:var(--max-w);margin:64px auto;padding:0 24px;}
+  .royal-card{position:relative;background:linear-gradient(180deg,#232f4d,#1c2740);color:#f2ead2;border-radius:4px;padding:48px 40px 44px;box-shadow:0 18px 40px rgba(28,39,64,0.35);overflow:hidden;}
+  .royal-card::before{content:"";position:absolute; inset:10px;border:1px solid rgba(201,160,74,0.45);pointer-events:none;}
+  .seal{position:absolute;top:-26px; right:36px;width:110px; height:110px;border-radius:50%;background:radial-gradient(circle at 35% 30%, var(--seal-dark), var(--seal) 60%, #4a0f17 100%);border:3px solid #e6c477;display:flex; align-items:center; justify-content:center;transform:rotate(8deg);box-shadow:0 10px 22px rgba(0,0,0,0.4);}
+  .seal span{font-family:'IM Fell English SC', serif;color:#f2ead2;font-size:12px;letter-spacing:0.12em;text-align:center;line-height:1.3;text-transform:uppercase;}
+  .royal-eyebrow{font-family:'IM Fell English SC', serif;letter-spacing:0.18em;text-transform:uppercase;font-size:12px;color:var(--brass-light);margin:0 0 8px;}
+  .royal-card h2{font-size:clamp(28px,4vw,38px);margin:0 0 16px;max-width:560px;color:#f7efd8;}
+  .royal-card p{max-width:640px;color:#d9d0b6;font-size:16.5px;}
+  .royal-facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:18px;margin:26px 0 8px;max-width:640px;}
+  .royal-facts div{border-left:2px solid var(--brass-light);padding-left:12px;}
+  .royal-facts .k{display:block;font-family:'IM Fell English SC', serif;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:var(--brass-light);margin-bottom:2px;}
+  .royal-facts .v{font-size:16px;color:#f2ead2;}
+  .royal-img-link{display:block;margin-top:28px;border:1px solid rgba(201,160,74,0.5);padding:6px;background:#0f1626;max-width:360px;}
+  .royal-img-link img{display:block;width:100%;height:auto;}
+  .royal-caption{font-size:12.5px;color:#b9ae8e;margin-top:8px;font-style:italic;}
+  .royal-note{margin-top:26px;padding-top:18px;border-top:1px solid rgba(201,160,74,0.3);font-size:14px;color:#b9ae8e;max-width:640px;}
+
+  .section-head{max-width:var(--max-w);margin:80px auto 28px;padding:0 24px;text-align:center;}
+  .section-head .eyebrow{font-family:'IM Fell English SC', serif;letter-spacing:0.18em;text-transform:uppercase;font-size:12px;color:var(--brass);margin:0 0 8px;}
+  .section-head h2{font-size:clamp(26px,4vw,36px);margin:0;}
+  .section-head p{color:var(--ink-soft);max-width:600px;margin:10px auto 0;font-size:15px;}
+
+  .timeline{max-width:var(--max-w);margin:0 auto 40px;padding:0 24px;position:relative;}
+  .timeline::before{content:"";position:absolute;left:47px; top:6px; bottom:6px;width:2px;background:repeating-linear-gradient(180deg,var(--brass) 0 6px, transparent 6px 12px);}
+  @media (max-width:680px){ .timeline::before{left:23px;} }
+  .gen{position:relative;padding-left:96px;margin-bottom:46px;}
+  @media (max-width:680px){ .gen{padding-left:52px;} }
+  .gen-num{position:absolute;left:0; top:0;width:56px; height:56px;border-radius:50%;background:var(--card);border:2px solid var(--brass);display:flex; align-items:center; justify-content:center;font-family:'Cormorant Garamond', serif;font-weight:700;font-size:22px;color:var(--ink);z-index:2;}
+  @media (max-width:680px){ .gen-num{width:38px;height:38px;font-size:15px;left:0;} }
+  .gen-card{background:var(--card);border:1px solid var(--card-line);border-radius:3px;padding:26px 28px;box-shadow:0 4px 14px rgba(28,39,64,0.06);}
+  .gen-top{display:flex;flex-wrap:wrap;align-items:baseline;gap:10px 16px;margin-bottom:6px;}
+  .gen-name{font-size:24px;font-weight:600;margin:0;}
+  .gen-dates{font-family:'IM Fell English SC', serif;letter-spacing:0.06em;color:var(--ink-soft);font-size:14px;}
+  .status{display:inline-block;font-family:'IM Fell English SC', serif;letter-spacing:0.08em;text-transform:uppercase;font-size:11px;padding:4px 10px;border-radius:20px;color:#fff;margin-left:auto;}
+  .status.confirmed{background:var(--confirmed);}
+  .status.supported{background:var(--supported);}
+  .status.probable{background:var(--probable);}
+  .status.secondary{background:var(--secondary);}
+  .status.living{background:var(--living);}
+  .gen-note{font-size:15.5px;color:var(--ink);margin:8px 0 0;}
+  .gen-flag{margin-top:12px;font-size:13.5px;color:var(--seal-dark);background:#f3e6df;border-left:3px solid var(--seal);padding:8px 12px;}
+  .gallery{display:flex;gap:12px;margin-top:18px;flex-wrap:wrap;}
+  .thumb{display:block;width:100px;text-decoration:none;}
+  .thumb img{width:100px; height:100px;object-fit:cover;border:1px solid var(--card-line);border-radius:2px;display:block;transition:transform .15s ease, box-shadow .15s ease;}
+  .thumb:hover img{transform:translateY(-3px);box-shadow:0 8px 18px rgba(28,39,64,0.22);}
+  .thumb span{display:block;font-size:10.5px;color:var(--ink-soft);margin-top:5px;line-height:1.25;}
+  .no-image-note{margin-top:14px;font-size:13px;color:var(--ink-soft);font-style:italic;}
+
+  .lightbox{display:none;position:fixed; inset:0;background:rgba(15,20,33,0.92);z-index:50;align-items:center;justify-content:center;padding:24px;flex-direction:column;}
+  .lightbox:target{display:flex;}
+  .lightbox img{max-width:min(90vw,760px);max-height:80vh;border:2px solid var(--brass);background:#000;}
+  .lightbox .cap{color:#f2ead2;font-size:14px;max-width:640px;text-align:center;margin-top:14px;}
+  .lightbox .close{position:absolute; top:22px; right:28px;color:#f2ead2; font-size:28px; text-decoration:none;font-family:'IM Fell English SC', serif;}
+
+  .context-block{max-width:var(--max-w);margin:0 auto 90px;padding:0 24px;}
+  .context-block .gen-card{background:#f3ecd9;margin-bottom:16px;}
+
+  .integrity{background:var(--parchment-deep);border-top:1px solid var(--card-line);border-bottom:1px solid var(--card-line);padding:64px 24px;}
+  .integrity .wrap{max-width:var(--max-w);}
+  .integrity h2{font-size:28px;margin:0 0 8px;}
+  .integrity p.lede{color:var(--ink-soft);max-width:660px;margin:0 0 30px;font-size:15px;}
+  .legend{display:flex; flex-wrap:wrap; gap:14px 22px;margin-bottom:34px;}
+  .legend-item{display:flex;align-items:center;gap:8px;font-size:13.5px;color:var(--ink-soft);}
+  .dot{width:11px;height:11px;border-radius:50%;display:inline-block;}
+  .grid-notes{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px;}
+  .note-card{background:var(--card);border:1px solid var(--card-line);padding:18px 20px;border-radius:3px;}
+  .note-card h3{margin:0 0 6px;font-size:17px;}
+  .note-card p{margin:0;font-size:13.5px;color:var(--ink-soft);}
+
+  footer{text-align:center;padding:56px 24px 70px;color:var(--ink-soft);font-size:13px;}
+  footer .anchor{font-size:20px;margin-bottom:10px;}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <span class="anchor">⚓</span>
+  <p class="eyebrow">A Family Record, Compiled for Andrew Bullard</p>
+  <h1>The Soule <em>Line</em></h1>
+  <p class="subtitle">Thirteen generations, four centuries, and one long argument about who really owned that land in Bladen County. Traced, questioned, and re-checked — one document at a time.</p>
+  <p class="years">George Soule <span>·</span> Mayflower, 1620 <span>—</span> Andrew Bullard <span>·</span> 2026</p>
+</header>
+
+<div class="royal">
+  <div class="royal-card" id="royal-grant">
+    <div class="seal"><span>Anno<br>1736<br>Geo. II R.</span></div>
+    <p class="royal-eyebrow">Family Lore, Confirmed</p>
+    <h2>A King's Land, Granted to a Soule</h2>
+    <p>The family story always held that our land in North Carolina traced back to a grant from the English Crown. It turns out that's not embellishment — it's on paper. On January 20, 1736, Benjamin Soule Sr. (Gen. 10) received 320 acres in Bladen Precinct by a Crown Grant issued in the name of King George II, more than a generation before Benjamin's grandson would help found a country that no longer answered to kings at all.</p>
+    <div class="royal-facts">
+      <div><span class="k">Grantee</span><span class="v">Benjamin Soule Sr.</span></div>
+      <div><span class="k">Acreage</span><span class="v">320 acres</span></div>
+      <div><span class="k">Location</span><span class="v">Bladen Precinct, NC</span></div>
+      <div><span class="k">Dated</span><span class="v">Jan 20, 1736</span></div>
+      <div><span class="k">Authority</span><span class="v">King George II</span></div>
+      <div><span class="k">Record</span><span class="v">NC Crown Grant File No.324, Bk.5, p.369</span></div>
+    </div>
+    <a class="royal-img-link" href="#lb-royal">
+      <img src="images/gen10-ROYAL-crown-grant-1736.jpg" alt="NC Crown Grant File No.324 — Benjamin Soule, 320 acres, Bladen County, Jan 20 1736, King George II">
+    </a>
+    <p class="royal-caption">Click to enlarge — NC Crown Grant File No.324, Bladen County, Book 5, p.369</p>
+    <p class="royal-note">One honest caveat for family retellings: this is the only grant in the record actually issued by the Crown. The later 1793, 1815, and 1815 land patents held by Benjamin's descendants (Gen. 8 and Gen. 9, below) were issued by the sovereign State of North Carolina, after independence — still land, still ours, just no longer the King's to give.</p>
+  </div>
+</div>
+
+<div id="lb-royal" class="lightbox"><a href="#royal-grant" class="close">&times; close</a><img src="images/gen10-ROYAL-crown-grant-1736.jpg"><p class="cap">NC Crown Grant File No.324, Bladen County, Book 5, p.369 — Benjamin Soule, 320 acres, January 20, 1736, in the name of King George II.</p></div>
+
+<section class="section-head" id="timeline-head">
+  <p class="eyebrow">Thirteen Generations</p>
+  <h2>From Plymouth to Hope Mills</h2>
+  <p>Every entry below is rated by how well it's documented — confirmed by primary records, supported by strong secondary evidence, or still an open question. Tap any photograph to see the original source.</p>
+</section>
+
+<main class="timeline">
+
+  <article class="gen">
+    <div class="gen-num">13</div>
+    <div class="gen-card">
+      <div class="gen-top">
+        <h3 class="gen-name">George Soule</h3>
+        <span class="gen-dates">c.1601 – 1679</span>
+        <span class="status confirmed">Confirmed · Mayflower 1620</span>
+      </div>
+      <p class="gen-note">Signed the Mayflower Compact at Cape Cod on November 11, 1620, one of forty-one signers establishing the first framework of self-government in the colony. Servant to Edward Winslow on the crossing; later a landowner and Plymouth Court deputy in Duxbury, Massachusetts. One of 22 lines recognized by the General Society of Mayflower Descendants.</p>
+      <div class="gallery">
+        <a class="thumb" href="#lb1"><img src="images/gen13-mayflower-compact-1620.jpg" alt="Mayflower Compact record"><span>Mayflower Compact, Plymouth Colony records, Nov 11 1620</span></a>
+      </div>
+    </div>
+  </article>
+  <div id="lb1" class="lightbox"><a href="#timeline-head" class="close">&times; close</a><img src="images/gen13-mayflower-compact-1620.jpg"><p class="cap">Mayflower Compact / Plymouth Colony Records — George Soule, signer, November 11, 1620.</p></div>
+
+  <article class="gen">
+    <div class="gen-num">12</div>
+    <div class="gen-card">
+      <div class="gen-top">
+        <h3 class="gen-name">George Soule II</h3>
+        <span class="gen-dates">c.1639 – 1704</span>
+        <span class="status secondary">Secondary Source</span>
+      </div>
+      <p class="gen-note">Son of the Mayflower's George Soule, married Deborah, and had eight children. Newly restored to this record — earlier drafts skipped him entirely and connected his son William directly to the Mayflower passenger, which the documented children's list doesn't support.</p>
+      <p class="gen-flag">Not yet backed by an image in the family archive. Sourced to the Mayflower DNA Project's published research (mayflowerdna.org) and Throop's <em>Mayflower Families in Progress</em>. Worth tracking down a primary record before this goes in a Mayflower Society application.</p>
+    </div>
+  </article>
+
+  <article class="gen">
+    <div class="gen-num">11</div>
+    <div class="gen-card">
+      <div class="gen-top">
+        <h3 class="gen-name">William Soule</h3>
+        <span class="gen-dates">c.1671 – 1723</span>
+        <span class="status supported">Supported</span>
+      </div>
+      <p class="gen-note">Grandson — not son — of the Mayflower's George Soule. Married Hannah Eaton in Dartmouth around 1691; the couple raised eleven children there, including Benjamin (Gen. 10).</p>
+      <div class="gallery">
+        <a class="thumb" href="#lb2"><img src="images/gen11-dartmouth-quaker-lineage-1.jpg" alt="Dartmouth Quaker records"><span>Dartmouth Quaker records — Soule family lineage</span></a>
+        <a class="thumb" href="#lb3"><img src="images/gen11-dartmouth-quaker-lineage-2.jpg" alt="Dartmouth Quaker records continued"><span>Dartmouth Quaker records — continued</span></a>
+      </div>
+    </div>
+  </article>
+  <div id="lb2" class="lightbox"><a href="#timeline-head" class="close">&times; close</a><img src="images/gen11-dartmouth-quaker-lineage-1.jpg"><p class="cap">Dartmouth Quaker Records — Soule family births and lineage.</p></div>
+  <div id="lb3" class="lightbox"><a href="#timeline-head" class="close">&times; close</a><img src="images/gen11-dartmouth-quaker-lineage-2.jpg"><p class="cap">Dartmouth Quaker Records — Soule family lineage, continued.</p></div>
+
+  <article class="gen">
+    <div class="gen-num">10</div>
+    <div class="gen-card">
+      <div class="gen-top">
+        <h3 class="gen-name">Benjamin Soule Sr.</h3>
+        <span class="gen-dates">1698 – 1774</span>
+        <span class="status confirmed">Confirmed · 5 sources</span>
+      </div>
+      <p class="gen-note">Born in Dartmouth, Massachusetts; married Mary Holway there on October 25, 1721. In 1736 received the 320-acre Crown Grant in Bladen Precinct, NC, under King George II — the land grant behind the family's oldest story, told above. Died in North Carolina in 1774.</p>
+      <div class="gallery">
+        <a class="thumb" href="#lb-royal2"><img src="images/gen10-ROYAL-crown-grant-1736.jpg" alt="1736 Crown Grant"><span>Crown Grant No.324, 1736 (see feature above)</span></a>
+        <a class="thumb" href="#lb4"><img src="images/gen10-sandwich-register-marriage-1721.jpg" alt="Sandwich Vital Register"><span>Sandwich Vital Register — marriage, Oct 25 1721</span></a>
+      </div>
+    </div>
+  </article>
+  <div id="lb-royal2" class="lightbox"><a href="#timeline-head" class="close">&times; close</a><img src="images/gen10-ROYAL-crown-grant-1736.jpg"><p class="cap">NC Crown Grant File No.324 — Benjamin Soule, 320 acres, Jan 20, 1736, King George II.</p></div>
+  <div id="lb4" class="lightbox"><a href="#timeline-head" class="close">&times; close</a><img src="images/gen10-sandwich-register-marriage-1721.jpg"><p class="cap">Sandwich Vital Register, pp.68–69 — Benjamin Sole of Dartmouth married Mary Holway, Oct 25, 1721.</p></div>
+
+  <article class="gen">
+    <div class="gen-num">9</div>
+    <div class="gen-card">
+      <div class="gen-top">
+        <h3 class="gen-name">Joseph Soule Sr.</h3>
+        <span class="gen-dates">1731 – 1790</span>
+        <span class="status confirmed">Confirmed · 5 sources</span>
+      </div>
+      <p class="gen-note">Born in Dartmouth January 11, 1731; migrated south and married Helen Ann Cartrette in North Carolina. Held land in Brunswick County (Patent No.290, 1793) and appears in the 1790 census there. Died in Brunswick County in 1790.</p>
+      <p class="gen-flag">Records disagree on his mother's name: the Dartmouth Quaker register names her "Anne," while Benjamin's own marriage record (above) names his wife Mary Holway. One of these is likely a transcription or indexing error — worth checking the original register page.</p>
+      <div class="gallery">
+        <a class="thumb" href="#lb5"><img src="images/gen09-dartmouth-quaker-register-joseph-birth.jpg" alt="Dartmouth Quaker Register"><span>Dartmouth Quaker Register — birth, Jan 11 1731</span></a>
+        <a class="thumb" href="#lb6"><img src="images/gen09-birth-register-joseph-children.jpg" alt="Soule Birth Register"><span>Soule Birth Register — children, 1738–1771</span></a>
+        <a class="thumb" href="#lb7"><img src="images/gen09-1790-census-brunswick.jpg" alt="1790 census Brunswick County"><span>1790 Federal Census, Brunswick Co. NC</span></a>
+        <a class="thumb" href="#lb8"><img src="images/gen09-patent290-1793-state-grant.jpg" alt="Patent No.290, 1793"><span>Patent No.290 — 153 ac., Seven Creek, Nov 1793 (NC state grant)</span></a>
+        <a class="thumb" href="#lb9"><img src="images/gen09-brunswick-deed-book6-detail.jpg" alt="Brunswick Deed Book 6"><span>Brunswick Co. Deed Book 6, p.295</span></a>
+        <a class="thumb" href="#lb10"><img src="images/gen09-brunswick-general-index-1.jpg" alt="Brunswick General Index"><span>Brunswick Co. General Index</span></a>
+        <a class="thumb" href="#lb11"><img src="images/gen09-brunswick-land-records-2.jpg" alt="Brunswick Land Records"><span>Brunswick Co. land records, continued</span></a>
+      </div>
+    </div>
+  </article>
+  <div id="lb5" class="lightbox"><a href="#timeline-head" class="close">&times; close</a><img src="images/gen09-dartmouth-quaker-register-joseph-birth.jpg"><p class="cap">Dartmouth Quaker Register, pp.116–117 — Joseph Soule born Jan 11, 1731.</p></div>
+  <div id="lb6" class="lightbox"><a href="#timeline-head" class="close">&times; close</a><img src="images/gen09-birth-register-joseph-children.jpg"><p class="cap">Soule Birth Register, pp.154–155 — children of Joseph & Mary; Joseph & Elizabeth (1738–1771).</p></div>
+  <div id="lb7" class="lightbox"><a href="#timeline-head" class="close">&times; close</a><img src="images/gen09-1790-census-brunswick.jpg"><p class="cap">1790 Federal Census, Brunswick County, NC — Joseph Soles household; Timothy & Nathaniel Soles nearby.</p></div>
+  <div id="lb8" class="lightbox"><a href="#timeline-head" class="close">&times; close</a><img src="images/gen09-patent290-1793-state-grant.jpg"><p class="cap">Brunswick County Deed Book C, p.295 — Patent No.290: Joseph Soles, 153 acres, Seven Creek, Nov 12, 1793 (State of North Carolina grant).</p></div>
+  <div id="lb9" class="lightbox"><a href="#timeline-head" class="close">&times; close</a><img src="images/gen09-brunswick-deed-book6-detail.jpg"><p class="cap">Brunswick County Deed Book — Book 6, Page 295 reference detail.</p></div>
+  <div id="lb10" class="lightbox"><a href="#timeline-head" class="close">&times; close</a><img src="images/gen09-brunswick-general-index-1.jpg"><p class="cap">Brunswick County General Index — Joseph Sowl / Soule / Sauls land records.</p></div>
+  <div id="lb11" class="lightbox"><a href="#timeline-head" class="close">&times; close</a><img src="images/gen09-brunswick-land-records-2.jpg"><p class="cap">Brunswick County Land Records — Sowl/Soule/Sauls entries, continued.</p></div>
+
+  <article class="gen">
+    <div class="gen-num">8</div>
+    <div class="gen-card">
+      <div class="gen-top">
+        <h3 class="gen-name">Joseph F. Soles</h3>
+        <span class="gen-dates">1766 – 1843</span>
+        <span class="status confirmed">Confirmed · 3 sources</span>
+      </div>
+      <p class="gen-note">Born in North Carolina in 1766, the one son among six daughters. Held two land grants in the newly formed Columbus County (Patent No.146 and No.153, both 1815). Married Elizabeth Ann Simmons — a name later echoed in his descendants' naming patterns. Died in Columbus County in 1843, age 77.</p>
+      <p class="gen-flag">This is the weakest confirmed link in the chain: no will or estate record has yet been found naming Isaiah Soles (Gen. 7) as his son. That document is the single highest-priority item still needed.</p>
+      <div class="gallery">
+        <a class="thumb" href="#lb12"><img src="images/gen08-patent146-1815.jpg" alt="Patent 146"><span>Patent No.146 — 50 ac., Seven Creeks, May 8 1815</span></a>
+        <a class="thumb" href="#lb13"><img src="images/gen08-patent153-1815.jpg" alt="Patent 153"><span>Patent No.153 — 150 ac., Tanners Swamp, c.1815</span></a>
+        <a class="thumb" href="#lb14"><img src="images/gen08-columbus-patent-listing-1.jpg" alt="Columbus patent listing"><span>Columbus Co. patent listings</span></a>
+        <a class="thumb" href="#lb15"><img src="images/gen08-columbus-patent-listing-2.jpg" alt="Columbus patent listing 2"><span>Columbus Co. patent listings, continued</span></a>
+        <a class="thumb" href="#lb16"><img src="images/gen08-patent153-detail.jpg" alt="Patent 153 detail"><span>Patent No.153 detail &amp; surrounding grants</span></a>
+        <a class="thumb" href="#lb17"><img src="images/gen08-nclandgrants-patent146-153.jpg" alt="nclandgrants 146/153"><span>nclandgrants.com — Patent 146 &amp; 153</span></a>
+      </div>
+    </div>
+  </article>
+  <div id="lb12" class="lightbox"><a href="#timeline-head" class="close">&times; close</a><img src="images/gen08-patent146-1815.jpg"><p class="cap">NC Land Grant Patent No.146 — Joseph Soule, 50 acres, Seven Creeks, Columbus County, May 8, 1815.</p></div>
+  <div id="lb13" class="lightbox"><a href="#timeline-head" class="close">&times; close</a><img src="images/gen08-patent153-1815.jpg"><p class="cap">NC Land Grant Patent No.153 — Joseph Soles, 150 acres, Tanners Swamp, Columbus County, c.1815.</p></div>
+  <div id="lb14" class="lightbox"><a href="#timeline-head" class="close">&times; close</a><img src="images/gen08-columbus-patent-listing-1.jpg"><p class="cap">NC Land Grant Records — Columbus County patent listings.</p></div>
+  <div id="lb15" class="lightbox"><a href="#timeline-head" class="close">&times; close</a><img src="images/gen08-columbus-patent-listing-2.jpg"><p class="cap">NC Land Grant Records — Columbus County patent listings, continued.</p></div>
+  <div id="lb16" class="lightbox"><a href="#timeline-head" class="close">&times; close</a><img src="images/gen08-patent153-detail.jpg"><p class="cap">NC Land Grant Records — Patent No.153 detail and surrounding grants.</p></div>
+  <div id="lb17" class="lightbox"><a href="#timeline-head" class="close">&times; close</a><img src="images/gen08-nclandgrants-patent146-153.jpg"><p class="cap">NC Land Grant Records — Patent No.146 and No.153, nclandgrants.com.</p></div>
+
+  <article class="gen">
+    <div class="gen-num">7</div>
+    <div class="gen-card">
+      <div class="gen-top">
+        <h3 class="gen-name">Isaiah Soles</h3>
+        <span class="gen-dates">c.1805 – 1880</span>
+        <span class="status confirmed">Confirmed · 3 sources</span>
+      </div>
+      <p class="gen-note">Farmer in Columbus County, NC — appears in the 1850 census with wife Tabitha and six children including 18-year-old Joshua. A 1914 death index entry names him as the parent of his son Alva, then about 77. The Cartrette family lived next door in 1850, consistent with (though not proof of) the family's earlier Cartrette marriage.</p>
+      <div class="gallery">
+        <a class="thumb" href="#lb18"><img src="images/gen07-1850-census-isaiah-cartrette.jpg" alt="1850 census"><span>1850 Census — Isaiah's household &amp; Cartrette neighbors</span></a>
+        <a class="thumb" href="#lb19"><img src="images/gen07-1850-census-header-detail.jpg" alt="1850 census header"><span>1850 Census — page header &amp; Isaiah detail</span></a>
+        <a class="thumb" href="#lb20"><img src="images/gen07-1850-census-full-page.jpg" alt="1850 census full page"><span>1850 Census — full page 507</span></a>
+        <a class="thumb" href="#lb21"><img src="images/gen07-death-index-alva-1914.jpg" alt="1914 death index"><span>Death Index — Alva Soles, parent Isaiah, 1914</span></a>
+        <a class="thumb" href="#lb22"><img src="images/gen07-death-index-overview.jpg" alt="Death index overview"><span>Death Index — overview page</span></a>
+        <a class="thumb" href="#lb23"><img src="images/gen07-1880-census-williams-twp.jpg" alt="1880 census"><span>1880 Census — Williams Twp. Soles/Soule households</span></a>
+      </div>
+    </div>
+  </article>
+  <div id="lb18" class="lightbox"><a href="#timeline-head" class="close">&times; close</a><img src="images/gen07-1850-census-isaiah-cartrette.jpg"><p class="cap">1850 Federal Census, Columbus County NC, p.507 — Isaiah Souls household (Dwelling 501) and Cartrette family (Dwelling 502).</p></div>
+  <div id="lb19" class="lightbox"><a href="#timeline-head" class="close">&times; close</a><img src="images/gen07-1850-census-header-detail.jpg"><p class="cap">1850 Federal Census, Columbus County NC — page header and Isaiah Souls entry detail.</p></div>
+  <div id="lb20" class="lightbox"><a href="#timeline-head" class="close">&times; close</a><img src="images/gen07-1850-census-full-page.jpg"><p class="cap">1850 Federal Census, Columbus County NC — full page 507.</p></div>
+  <div id="lb21" class="lightbox"><a href="#timeline-head" class="close">&times; close</a><img src="images/gen07-death-index-alva-1914.jpg"><p class="cap">Columbus County Death Index, Book 1, p.294 — Alva Soles, parent Isaiah Soles, Feb 1, 1914.</p></div>
+  <div id="lb22" class="lightbox"><a href="#timeline-head" class="close">&times; close</a><img src="images/gen07-death-index-overview.jpg"><p class="cap">Columbus County Death Index — Vital Statistics overview page.</p></div>
+  <div id="lb23" class="lightbox"><a href="#timeline-head" class="close">&times; close</a><img src="images/gen07-1880-census-williams-twp.jpg"><p class="cap">1880 Federal Census, Williams Township, Columbus County NC — Soles/Soule households, page 119.</p></div>
+
+  <article class="gen">
+    <div class="gen-num">6</div>
+    <div class="gen-card">
+      <div class="gen-top">
+        <h3 class="gen-name">Joshua Sowles / Soles</h3>
+        <span class="gen-dates">1832 – 1898</span>
+        <span class="status confirmed">Confirmed · 2 sources</span>
+      </div>
+      <p class="gen-note">Listed at 18 in Isaiah's 1850 household. Served as 1st Lieutenant, 36th North Carolina Troops, CSA, and was taken as a prisoner of war. His military headstone independently confirms his birth and death dates.</p>
+      <div class="gallery">
+        <a class="thumb" href="#lb24"><img src="images/gen06-military-headstone-joshua-sowles.jpg" alt="Military headstone"><span>Military headstone — 1st Lt., 36th NC Troops CSA</span></a>
+      </div>
+    </div>
+  </article>
+  <div id="lb24" class="lightbox"><a href="#timeline-head" class="close">&times; close</a><img src="images/gen06-military-headstone-joshua-sowles.jpg"><p class="cap">Military Headstone — Joshua Sowles, 1st Lt., 36th NC Troops CSA, Feb 2 1832 – Sep 27 1898, POW.</p></div>
+
+  <article class="gen">
+    <div class="gen-num">5</div>
+    <div class="gen-card">
+      <div class="gen-top">
+        <h3 class="gen-name">Manley "Manly" Soles</h3>
+        <span class="gen-dates">1875 – 1934</span>
+        <span class="status supported">Supported</span>
+      </div>
+      <p class="gen-note">Killed — stabbed to death — in Tabor City, NC, around 1934. His son Joshua, then thirteen, inherited the estate.</p>
+      <p class="no-image-note">No image in the current archive for this generation.</p>
+    </div>
+  </article>
+
+  <article class="gen">
+    <div class="gen-num">4</div>
+    <div class="gen-card">
+      <div class="gen-top">
+        <h3 class="gen-name">Joshua Soles</h3>
+        <span class="gen-dates">1923 – Oct 1999</span>
+        <span class="status supported">Supported</span>
+      </div>
+      <p class="gen-note">Lived his entire life at 59 Fipps Lane, Tabor City, NC. Died at Whiteville Hospital in October 1999.</p>
+      <p class="no-image-note">No image in the current archive for this generation.</p>
+    </div>
+  </article>
+
+  <article class="gen">
+    <div class="gen-num">3</div>
+    <div class="gen-card">
+      <div class="gen-top">
+        <h3 class="gen-name">Danny Soles</h3>
+        <span class="gen-dates">b. Sept 6, 1946 — Living</span>
+        <span class="status living">Living</span>
+      </div>
+      <p class="gen-note">Born on his mother Agnes's 18th birthday. Lives at 3254 Pelligrini Ave, Hope Mills, NC. Father of Karen Soles.</p>
+    </div>
+  </article>
+
+  <article class="gen">
+    <div class="gen-num">2</div>
+    <div class="gen-card">
+      <div class="gen-top">
+        <h3 class="gen-name">Karen Soles</h3>
+        <span class="gen-dates">Living</span>
+        <span class="status living">Living</span>
+      </div>
+      <p class="gen-note">Mother of Andrew Bullard.</p>
+    </div>
+  </article>
+
+  <article class="gen">
+    <div class="gen-num">1</div>
+    <div class="gen-card">
+      <div class="gen-top">
+        <h3 class="gen-name">Andrew Bullard</h3>
+        <span class="gen-dates">Living</span>
+        <span class="status living">Living</span>
+      </div>
+      <p class="gen-note">Compiler of this record — the reason all of the above got written down in one place.</p>
+    </div>
+  </article>
+
+</main>
+
+<section class="context-block">
+  <div class="section-head" style="margin-top:0;">
+    <p class="eyebrow">Collateral Relatives</p>
+    <h2>Not Direct Ancestors — But Part of the Story</h2>
+    <p>A few names turn up in the record who aren't in the direct line but are close enough to be worth keeping.</p>
+  </div>
+  <article class="gen-card">
+    <div class="gen-top">
+      <h3 class="gen-name" style="font-size:20px;">Joshua Soles</h3>
+      <span class="gen-dates">c.1768 – 1830</span>
+      <span class="status probable">Highly Probable</span>
+    </div>
+    <p class="gen-note">Brother of Joseph F. Soles (Gen. 8), both likely sons of Joseph Soule Sr. (Gen. 9) and Helen Ann Cartrette. An earlier draft of this record mistakenly slotted him into the numbered chain as if he were a direct ancestor — a sibling can't sit between a father and son in a lineage, so he's listed here instead, still documented, just correctly placed.</p>
+    <div class="gallery">
+      <a class="thumb" href="#lb25"><img src="images/context-1800-census-joshua-soles-brother.jpg" alt="1800 census Joshua Soles"><span>1800 Census, NC District 30A — household head</span></a>
+    </div>
+  </article>
+  <div id="lb25" class="lightbox"><a href="#timeline-head" class="close">&times; close</a><img src="images/context-1800-census-joshua-soles-brother.jpg"><p class="cap">1800 Federal Census, NC District 30A — Joshua Soles listed as household head.</p></div>
+
+  <article class="gen-card">
+    <div class="gen-top">
+      <h3 class="gen-name" style="font-size:20px;">Chadwick Soule &amp; extended land grants</h3>
+      <span class="gen-dates">early 1800s, Columbus Co. NC</span>
+      <span class="status secondary">Context</span>
+    </div>
+    <p class="gen-note">Chadwick Soule received a 200-acre grant at Bog Branch in 1815 — the same neighborhood as Joseph F. Soles's land. Likely a son of Joseph Soule Sr. born after the family's move to North Carolina, but not yet placed in the direct line. A neighboring 1813 survey also names "Soles corner" as a boundary marker, meaning the family's land was already a fixed local landmark by then.</p>
+    <div class="gallery">
+      <a class="thumb" href="#lb26"><img src="images/context-patent155-chadwick-1815.jpg" alt="Patent 155"><span>Patent No.155 — Chadwick Soule, 200 ac., 1815</span></a>
+      <a class="thumb" href="#lb27"><img src="images/context-nclandgrants-patent155-161.jpg" alt="Patent 155/161"><span>nclandgrants.com — Patent 155 &amp; 161</span></a>
+      <a class="thumb" href="#lb28"><img src="images/context-soles-corner-survey.jpg" alt="Soles corner survey"><span>"Soles corner" survey reference, 1813</span></a>
+      <a class="thumb" href="#lb29"><img src="images/context-nclandgrants-patent-entries-1.jpg" alt="Patent entries"><span>NC land grant patent entries</span></a>
+      <a class="thumb" href="#lb30"><img src="images/context-nclandgrants-patent-entries-2.jpg" alt="Patent entries continued"><span>NC land grant patent entries, continued</span></a>
+      <a class="thumb" href="#lb31"><img src="images/context-patent-index-page-1.jpg" alt="Patent index"><span>NC land grant patent index page</span></a>
+      <a class="thumb" href="#lb32"><img src="images/context-patent-index-page-2.jpg" alt="Patent index continued"><span>NC land grant patent index, continued</span></a>
+      <a class="thumb" href="#lb33"><img src="images/context-1880-census-simmons-joseph-b.jpg" alt="1880 census Simmons"><span>1880 Census — Simmons Soule &amp; Joseph B. Soule households</span></a>
+      <a class="thumb" href="#lb34"><img src="images/context-death-index-morgan-soles.jpg" alt="Morgan Soles death index"><span>Death Index — Morgan Soles, May 20 1914</span></a>
+    </div>
+  </article>
+  <div id="lb26" class="lightbox"><a href="#timeline-head" class="close">&times; close</a><img src="images/context-patent155-chadwick-1815.jpg"><p class="cap">NC Land Grant Patent No.155 — Chadwick Soule, 200 acres, Bog Branch, Columbus County, Jan 3, 1815.</p></div>
+  <div id="lb27" class="lightbox"><a href="#timeline-head" class="close">&times; close</a><img src="images/context-nclandgrants-patent155-161.jpg"><p class="cap">NC Land Grant Records — Patent No.155 (Chadwick Soule) and No.161 (Duncan / "Soles corner" reference).</p></div>
+  <div id="lb28" class="lightbox"><a href="#timeline-head" class="close">&times; close</a><img src="images/context-soles-corner-survey.jpg"><p class="cap">NC Land Grant Records — "Soles corner" survey reference detail, nclandgrants.com, 1813.</p></div>
+  <div id="lb29" class="lightbox"><a href="#timeline-head" class="close">&times; close</a><img src="images/context-nclandgrants-patent-entries-1.jpg"><p class="cap">NC Land Grant Records — patent entries, nclandgrants.com.</p></div>
+  <div id="lb30" class="lightbox"><a href="#timeline-head" class="close">&times; close</a><img src="images/context-nclandgrants-patent-entries-2.jpg"><p class="cap">NC Land Grant Records — patent entries, continued.</p></div>
+  <div id="lb31" class="lightbox"><a href="#timeline-head" class="close">&times; close</a><img src="images/context-patent-index-page-1.jpg"><p class="cap">NC Land Grant Records — patent index page.</p></div>
+  <div id="lb32" class="lightbox"><a href="#timeline-head" class="close">&times; close</a><img src="images/context-patent-index-page-2.jpg"><p class="cap">NC Land Grant Records — patent index, continued.</p></div>
+  <div id="lb33" class="lightbox"><a href="#timeline-head" class="close">&times; close</a><img src="images/context-1880-census-simmons-joseph-b.jpg"><p class="cap">1880 Federal Census, Williams Township — Simmons Soule and Joseph B. Soule households.</p></div>
+  <div id="lb34" class="lightbox"><a href="#timeline-head" class="close">&times; close</a><img src="images/context-death-index-morgan-soles.jpg"><p class="cap">Columbus County Death Index, Book 1, p.303 — Morgan Soles entry, May 20, 1914.</p></div>
+</section>
+
+<section class="integrity">
+  <div class="wrap">
+    <h2>How This Record Was Checked</h2>
+    <p class="lede">This isn't a finished, notarized proof — it's a working family record, kept honest on purpose. Every generation is labeled by how well it's backed up, and every correction made along the way is kept visible rather than quietly erased.</p>
+    <div class="legend">
+      <div class="legend-item"><span class="dot" style="background:var(--confirmed)"></span>Confirmed — primary source document</div>
+      <div class="legend-item"><span class="dot" style="background:var(--supported)"></span>Supported — strong secondary evidence</div>
+      <div class="legend-item"><span class="dot" style="background:var(--probable)"></span>Highly probable — documentary sequence</div>
+      <div class="legend-item"><span class="dot" style="background:var(--secondary)"></span>Secondary source — not yet in the archive</div>
+      <div class="legend-item"><span class="dot" style="background:var(--living)"></span>Living relative</div>
+    </div>
+    <div class="grid-notes">
+      <div class="note-card">
+        <h3>19 sources, 35 photographs</h3>
+        <p>The written Evidence Log names 19 distinct primary-source documents. The photo archive holds 35 images because several documents — the 1850 census, the land patents, the death index — are represented more than once: a full-page shot plus a cropped detail, or a record plus its index-site listing. Nothing here is double-counted as a separate source; it's the same 19 records, photographed more than once for legibility.</p>
+      </div>
+      <div class="note-card">
+        <h3>George Soule II restored</h3>
+        <p>An earlier draft connected William Soule directly to the Mayflower's George Soule. Published Soule genealogies don't list a son named William — only a grandson, through George Soule II. That missing generation has been added back in.</p>
+      </div>
+      <div class="note-card">
+        <h3>Joshua Soles re-placed</h3>
+        <p>A sibling of Joseph F. Soles had been numbered as if he were a direct ancestor. He's still documented — just moved to the collateral-relatives section, where a brother belongs.</p>
+      </div>
+      <div class="note-card">
+        <h3>Still open</h3>
+        <p>The link between Joseph F. Soles and his father is not yet closed by a will or estate record — the single highest-priority document still to be found. A naming discrepancy (Anne vs. Mary Holway) also needs a look at the original register page.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="anchor">⚓</div>
+  <p>Soles / Soule Family Lineage — compiled for family use.<br>Not yet submitted for Mayflower Society verification.</p>
+</footer>
+
+</body>
+</html>
